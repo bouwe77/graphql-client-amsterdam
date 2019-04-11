@@ -7,3 +7,11 @@ export const AllFilmsQuery = `{
         } 
 }
 `;
+
+export const AllSpeciesQuery = `query allSpecies($first: Int) {
+  allSpecies(first: $first){
+    species{
+      name
+    }
+  }
+}`;
